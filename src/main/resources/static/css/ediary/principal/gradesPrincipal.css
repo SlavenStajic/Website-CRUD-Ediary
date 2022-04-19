@@ -1,0 +1,20 @@
+body{
+    background-image: url(../../../images/blueback.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: auto;
+
+}
+
+h3 {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+}
+
+.container{
+    margin-top: 5%;
+}

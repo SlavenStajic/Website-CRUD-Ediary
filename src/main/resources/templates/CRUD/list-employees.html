@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en"
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<link rel="stylesheet" th:href="@{/css/listemployee.css}"/>
+
+	<title>Employee Directory</title>
+</head>
+
+<body>
+
+<div class="back">
+
+<a th:href="@{/projects}"
+   class="btn btn-dark">
+	Back
+</a>
+
+</div>
+
+<div class="container">
+
+	<h3>Employee list manager</h3>
+	<hr>
+
+
+
+
+	<form th:action="@{/employees/searchEmployee}" class="form-inline" onclick="myFunction()">
+		<span class="popuptext" id="myPopup">Second time search wont work because there is problem with Hibernate 5.6.6 and 5.6.7.
+The Hibernate bug is HHH-15142.</span>
+
+
+
+		<a th:href="@{/employees/addEmployee}"
+		   class="btn btn-primary btn-sm mr-5 mb-3">
+
+			Add Employee
+		</a>
+
+		<input class="form-control  ml-5 mr-sm-2 mb-3" type="search" name="employeeName" placeholder="Search by name" />
+
+		<button class="btn btn-success mb-3" type="submit">Search</button>
+	</form>
+
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Branch</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr th:each="tempEmployee : ${employees}">
+
+				<td th:text="${tempEmployee.firstName}" />
+				<td th:text="${tempEmployee.lastName}" />
+				<td th:text="${tempEmployee.email}" />
+				<td th:text="${tempEmployee.branch}" />
+
+				<td>
+
+					<div>
+
+							<!-- Add "update" button/link -->
+							<a th:href="@{/employees/updateEmployee(employeeId=${tempEmployee.id})}"
+							   class="btn btn-info btn-sm">
+								Update
+							</a>
+
+
+							<!-- Add "delete" button/link -->
+							<a th:href="@{/employees/deleteEmployee(employeeId=${tempEmployee.id})}"
+							   class="btn btn-danger btn-sm"
+							   onclick="if (!(confirm('Are you sure you want to delete this employee?'))) return false">
+								Delete
+							</a>
+
+					</div>
+
+					</td>
+
+
+
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+</div>
+
+</body>
+
+<script>
+	// When the user clicks on div, open the popup
+	function myFunction() {
+		var popup = document.getElementById("myPopup");
+		popup.classList.toggle("show");
+	}
+</script>
+
+</html>
+
+
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,800;1,600&family=Noto+Serif:wght@700&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/resume.css}"/>
+
+
+       <script
+      src="https://kit.fontawesome.com/f9728a1584.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="http://fonts.cdnfonts.com/css/league-spartan"
+      rel="stylesheet"
+    />
+
+    <title>Resume</title>
+  </head>
+
+  <body>
+    <div class="full">
+      <div class="navbar-container">
+        <div class="navbar">
+          <div class="navbar-links">
+            <a class="links" th:href="@{/index}">Home</a>
+            <a class="links" th:href="@{/resume}">Resume</a>
+            <a class="links" th:href="@{/projects}">Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="resume">
+          <h2>Resume</h2>
+
+
+          <div class="download-div">
+            <a th:href="@{/pdf/CV.pdf}" download class="download-button"
+            >Download CV
+            </a>
+
+          </div>
+
+          <div class="download-div">
+            <a th:href="@{/pdf/preporuka.pdf}" download class="download-button"
+            >Download letter of recommendation
+            </a>
+
+          </div>
+
+
+        </div>
+
+        <table>
+          <tr>
+            <td class="segment">WORK EXPERIENCE</td>
+          </tr>
+        </table>
+        <hr />
+        <table>
+          <tr class="spaceOver">
+            <td class="company">Hotel Park Doboj</td>
+
+            <td class="date">Aug. 2019 – Aug. 2021</td>
+          </tr>
+          <tr>
+            <td class="position">System Administration</td>
+            <td class="location">Doboj, BiH</td>
+          </tr>
+          <tr class="spaceUnder">
+            <td class="workdone">
+              Maintence of computers, computer network, printers, etc.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">Visoka medicinska škola zdravstva   <a href="https://vmsz.ba/" target="_blank">  vmsz.ba</a></td>
+            <td class="date">Jan. 2020 – Jan. 2021</td>
+          </tr>
+          <tr>
+            <td class="position">WordPress editor</td>
+            <td class="location">Doboj, BiH</td>
+          </tr>
+          <tr class="spaceUnder">
+            <td class="workdone">
+              Management and maintenance of the school website.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">NN TECHNISOL</td>
+            <td class="date">Aug.2021 – Nov.2021</td>
+          </tr>
+          <tr>
+            <td class="position">IT sector</td>
+            <td class="location">Doboj, BiH</td>
+          </tr>
+          <tr class="spaceUnder">
+            <td class="workdone">
+              Maintenance of software and hardware of cash registers.
+            </td>
+          </tr>
+
+          <tr class="spaceOverSegment">
+            <td class="segment">EDUCATION</td>
+          </tr>
+          <tr>
+
+        </table>
+        <hr />
+
+        <table>
+          <tr class="spaceOver">
+            <td class="company">JU Traffic and Electrical School</td>
+            <td class="date">Aug. 2019 – Aug. 2021</td>
+
+          </tr>
+          </tr>
+          <tr class="spaceUnder">
+            <td class="position">Direction of electric power technician</td>
+            <td class="location">Doboj, BiH</td>
+          </tr>
+
+          <tr>
+            <td class="company">Pan-European University Apeiron</td>
+            <td class="date">Oct.2019 – Currently</td>
+          </tr>
+          <tr>
+            <td class="position">
+              Faculty of Information Technology, Department of Programming and
+              Software Engineering
+
+            </td>
+            <td class="location" valign=top>Banja Luka, BiH</td>
+          </tr>
+          <tr class="spaceUnder">
+            <td class="workdone">Third year student</td>
+          </tr>
+
+          <tr class="spaceOverSegment">
+            <td class="segment">TECHNICAL SKILLS</td>
+          </tr>
+
+        </table>
+        <hr />
+        <table>
+
+          <tr class="spaceOver">
+            <td class="company">
+              Proficient with Java and Spring framework ( junior level )
+            </td>
+          </tr>
+          <tr class="spaceUnder">
+            <td class="position">
+              Spring MVC, Hibernate, AOP, Spring Security, Spring REST, Spring
+              Boot, Maven , Thymeleaf
+            </td>
+          </tr>
+
+          <tr>
+            <td class="company">Still learning</td>
+          </tr>
+          <tr class="spaceUnder">
+            <td class="position">HTML, CSS</td>
+          </tr>
+
+          <tr>
+            <td class="company">Future things I want to learn</td>
+          </tr>
+          <tr class="spaceUnderLast">
+            <td class="position">JavaScript, React, Angular</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>

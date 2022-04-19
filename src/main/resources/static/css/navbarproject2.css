@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    background-color: #3f72af;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #dbe2ef;
+}
+
+.navbar a:hover {
+    transform: translateY(-3px);
+}
+.navbar a:active {
+    color: #dbe2ef;
+    transform: translateY(0);
+}
+
+form {
+    position: absolute;
+    right: 3%;
+
+}

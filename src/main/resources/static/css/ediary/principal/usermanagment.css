@@ -1,0 +1,46 @@
+h3,h2,h4,h5{
+    color: white;
+    font-family: "League Spartan", sans-serif;
+}
+
+.container{
+    margin-top: 2%;
+    margin-bottom: 10%;
+
+
+}
+
+
+
+body{
+    background-image: url(../../../images/blueback.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: auto;
+}
+
+.h4{
+    color: white;
+    font-family: "League Spartan", sans-serif;
+}
+
+.back{
+    color:white;
+}
+.ERROR{
+    font-size: 8rem;
+    color: #ff3b3b;
+}
+
+.error-message{
+    color: #ff3b3b;
+}
+
+.student-name{
+    font-size: 3rem;
+    color: #ececec;
+}

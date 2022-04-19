@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/ediary/principal/usermanagment.css}"/>
+    <title>Save User</title>
+</head>
+
+<body>
+<div class="container">
+
+    <h3>User Directory</h3>
+    <hr>
+
+    <p class="h4 mb-4">Save User</p>
+
+    <form th:action="@{/ednevnik/principal/saveUser}"
+          th:object="${user}" method="POST">
+
+
+        <input type="hidden" th:field="*{id}" />
+
+        <div>
+
+            <ul class="error-message">
+                <li th:each="err : ${#fields.errors('userName')}" th:text="${err}" class="error" />
+
+            </ul>
+
+        <input type="text" th:field="*{userName}"
+              th:onerror="f" class="form-control mb-4 col-4" id="userName" placeholder="User name">
+
+        </div>
+
+        <div>
+
+            <ul class="error-message">
+                <li th:each="err : ${#fields.errors('password')}" th:text="${err}" class="error" />
+
+            </ul>
+
+
+        <input type="text" th:field="*{password}"
+               class="form-control mb-4 col-4" id="password" placeholder="password">
+
+        </div>
+        <div>
+
+
+
+        <input type="hidden" th:field="*{roles}"  id="role"
+               class="form-control mb-4 col-4" placeholder="Role">
+
+        </div>
+
+        <script type="text/javascript">
+
+            function reply_click1(element)
+            {
+                document.getElementById('role').value = element.getAttribute('parent');
+
+            }
+
+            function reply_click2(element)
+            {
+                document.getElementById('role').value = element.getAttribute('teacher');
+                            }
+
+            function reply_click3(element)
+            {
+                document.getElementById('role').value = element.getAttribute('principal');
+
+            }
+
+        </script>
+
+
+        <button type="button" class="btn btn-primary" onclick="reply_click1(this)"  parent="ROLE_PARENT">Parent</button>
+        <span class="spacingbutton"></span>
+        <button type="button" class="btn btn-primary" onclick="reply_click2(this)"  teacher="ROLE_TEACHER">Teacher</button>
+        <span class="spacingbutton"></span>
+        <button type="button" class="btn btn-primary" onclick="reply_click3(this)"  principal="ROLE_PRINCIPAL">Principal</button>
+
+
+
+
+
+
+
+
+
+
+
+
+        <button type="submit" class="btn btn-info col-2">Save</button>
+
+    </form>
+
+    <hr>
+    <a class="back" th:href="@{/ednevnik/principal/upravljanjenalozima}">Back to User List</a>
+
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

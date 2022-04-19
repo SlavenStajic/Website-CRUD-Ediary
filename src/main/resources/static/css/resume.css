@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond";
+  color: #122338;
+}
+.container {
+  position: relative;
+  margin-top: 5%;
+  width: 50%;
+  margin: auto;
+}
+.resume {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-bottom: 7%;
+  margin-top: 7%;
+}
+h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #122338;
+  font-family: "League Spartan", sans-serif;
+}
+
+.links{
+  font-family: "League Spartan", sans-serif;
+}
+
+.download-div {
+  margin-left: 65%;
+  margin-bottom: 2%;
+}
+
+.download-button {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+  Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.download-button:hover,
+.download-button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.download-button:hover {
+  transform: translateY(-1px);
+}
+
+.download-button:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  font-size: 2.5rem;
+}
+
+.segment {
+  font-size: 2.09rem;
+  margin-bottom: 10%;
+}
+
+.company {
+  font-size: 1.59rem;
+
+}
+.company a:visited,
+company a:link {
+  text-decoration: none;
+}
+
+.date {
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.position {
+  width: 70%;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.location {
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.workdone {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+hr {
+  height: 0.45rem;
+  background-color:#122338;
+  border-radius: 100px;
+
+}
+
+tr.spaceUnder > td {
+  padding-bottom: 1em;
+}
+
+tr.spaceUnderLast > td {
+  padding-bottom: 10em;
+}
+
+tr.spaceOver > td {
+  padding-top: 0.5em;
+}
+
+tr.spaceOverSegment > td {
+  padding-top: 0.5em;
+}
+

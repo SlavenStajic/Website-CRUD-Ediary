@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"/>
+
+
+    <script
+      src="https://kit.fontawesome.com/f9728a1584.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="http://fonts.cdnfonts.com/css/league-spartan"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-links">
+          <a th:href="@{/index}">Home</a>
+          <a th:href="@{/resume}">Resume</a>
+          <a th:href="@{/projects}">Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="logo">
+        <img src="../../static/images/slaven.jpg" width="1000" th:src="@{images/slaven.jpg}"/>
+        <h1>Slaven Stajić</h1>
+        <h5>Computer Science Student</h5>
+      </div>
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+          My name is Slaven Stajić. I am currently studying towards my
+          bachelor's degree in Computer Science at the University Apeiron, Banja
+          Luka. I enjoy programming and working on challenging projects.
+        </p>
+      </div>
+      <footer>
+        <a href="mailto:slavencave@gmail.com">
+          <div class="footer-link">
+            <div class="link">
+              <i class="fa-solid fa-envelope"></i>
+              <p>slavenstajic@gmail.com</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://github.com/SlavenStajic">
+          <div class="footer-link">
+            <div class="link">
+              <i class="fa-brands fa-github-alt"></i>
+              <p>github.com/SlavenStajic</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/slaven-stajic/">
+          <div class="footer-link">
+            <div class="link">
+              <i class="fa-brands fa-linkedin"></i>
+              <p>linkedin.com/in/slaven-stajic</p>
+            </div>
+          </div>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
