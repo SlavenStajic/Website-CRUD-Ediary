@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "EB Garamond";
+  font-family: "Roboto Mono";
   color: #122338;
 }
 .container {
@@ -107,23 +107,24 @@ company a:link {
 }
 
 .date {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: right;
 }
 
 .position {
   width: 70%;
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .location {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: right;
+  font-style: italic;
 }
 
 .workdone {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: italic;
 }
 

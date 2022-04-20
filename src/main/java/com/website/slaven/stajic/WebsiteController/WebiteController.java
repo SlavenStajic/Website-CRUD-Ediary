@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class DemoController {
+public class WebiteController {
 
 
     @GetMapping(value = {"/", "/index"})
@@ -21,10 +21,5 @@ public class DemoController {
     public String showProjectsPage(){
         return "/website/projects";
     }
-
-
-
-
-
 
 }
